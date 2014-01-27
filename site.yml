@@ -1,0 +1,6 @@
+---
+- hosts: redis
+  vars_files:
+    - "vars/{{ deploy_env }}.yaml"
+  roles:
+   - role: redis-server
