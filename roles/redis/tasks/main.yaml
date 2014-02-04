@@ -13,5 +13,4 @@
   command: make chdir=/tmp/redis-{{ redis_version }} creates=/tmp/redis-{{ redis_version }}/src/redis-server
   
 - name: install redis
-  command: make install chdir=/tmp/redis-{{ redis_version }}
-  sudo: yes
+  command: make install chdir=/tmp/redis-{{ redis_version }} creates=/usr/local/bin/redis-server

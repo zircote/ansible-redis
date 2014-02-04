@@ -1,6 +1,6 @@
 ---
 redis_config_file: "/etc/redis/{{ redis_port }}.conf"
-
+redis_overcommit_memory: yes
 # Redis configuration file 
 
 # Note on units: when memory size is needed, it is possible to specify
